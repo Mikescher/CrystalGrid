@@ -1,0 +1,91 @@
+// absCanvas v1.64 generated LevelFile
+// Programm: Crystal Grid
+// Method-Definitions: 8
+// Constant-Definitions: 5
+// Methods: ?
+
+
+programm "Crystal Grid"
+
+
+//  ------------------------  Constant Definitions:  ------------------------  
+
+#define [CONSTANT] [I] PLAYER_NEUTRAL=>-1
+#define [CONSTANT] [I] PLAYER_HUMAN=>0
+#define [CONSTANT] [I] PLAYER_KI_1=>1
+#define [CONSTANT] [I] PLAYER_KI_2=>2
+#define [CONSTANT] [I] PLAYER_KI_3=>3
+
+
+//  ------------------------  Method Definitions:  ------------------------  
+
+#define [METHOD] addCannon=>1
+#define [METHOD] setPlayerCount=>2
+#define [METHOD] addVoidWall=>3
+#define [METHOD] addVoidPillar=>4
+#define [METHOD] addWall=>5
+#define [METHOD] addPillar=>6
+#define [METHOD] addMovingVoidWall=>7
+#define [METHOD] addMovingVoidPillar=>8
+#define [METHOD] addVortex=>9
+
+
+//  ------------------------  Methods:  ------------------------  
+
+setPlayerCount[I](2)
+
+addCannon[III](352,  128, PLAYER_NEUTRAL)
+addCannon[III](528,  128, PLAYER_NEUTRAL)
+addCannon[III](1056, 128, PLAYER_NEUTRAL)
+addCannon[III](1232, 128, PLAYER_NEUTRAL)
+
+addCannon[III](176,  512, PLAYER_HUMAN)
+addCannon[III](528,  512, PLAYER_NEUTRAL)
+addCannon[III](880,  512, PLAYER_NEUTRAL)
+addCannon[III](1232, 512, PLAYER_KI_1)
+
+addCannon[III](176,  896, PLAYER_NEUTRAL)
+addCannon[III](352,  896, PLAYER_NEUTRAL)
+addCannon[III](880,  896, PLAYER_NEUTRAL)
+addCannon[III](1056, 896, PLAYER_NEUTRAL)
+
+//---------------------------------------
+
+addWall[IIBI](792, 96, true, 944)
+addWall[IIBI](320, 288, false, 384)
+addWall[IIBI](232, 480, true, 176)
+addWall[IIBI](144, 704, false, 448)
+
+addWall[IIBI](616, 928, true, 944)
+addWall[IIBI](1088, 736, false, 384)
+addWall[IIBI](1176, 544, true, 176)
+addWall[IIBI](1264, 320, false, 448)
+
+//--
+
+addWall[IIBI](440, 160, true, 112)
+addWall[IIBI](384, 320, false, 320)
+addWall[IIBI](440, 480, true, 112)
+addWall[IIBI](496, 320, false, 320)
+
+addWall[IIBI](1144, 160, true, 112)
+addWall[IIBI](1088, 320, false, 320)
+addWall[IIBI](1144, 480, true, 112)
+addWall[IIBI](1200, 320, false, 320)
+
+addWall[IIBI](968,  544, true, 112)
+addWall[IIBI](912,  704, false, 320)
+addWall[IIBI](968,  864, true, 112)
+addWall[IIBI](1024, 704, false, 320)
+
+addWall[IIBI](264,  544, true, 112)
+addWall[IIBI](208,  704, false, 320)
+addWall[IIBI](264,  864, true, 112)
+addWall[IIBI](320, 704, false, 320)
+
+//--
+
+addWall[IIBI](560, 512, false, 704)
+addWall[IIBI](704, 864, true, 288)
+addWall[IIBI](848, 512, false, 704)
+addWall[IIBI](704, 160, true, 288)

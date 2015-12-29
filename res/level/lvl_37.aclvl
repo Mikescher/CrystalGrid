@@ -1,0 +1,66 @@
+// absCanvas v1.64 generated LevelFile
+// Programm: Crystal Grid
+// Method-Definitions: 8
+// Constant-Definitions: 5
+// Methods: ?
+
+
+programm "Crystal Grid"
+
+
+//  ------------------------  Constant Definitions:  ------------------------  
+
+#define [CONSTANT] [I] PLAYER_NEUTRAL=>-1
+#define [CONSTANT] [I] PLAYER_HUMAN=>0
+#define [CONSTANT] [I] PLAYER_KI_1=>1
+#define [CONSTANT] [I] PLAYER_KI_2=>2
+#define [CONSTANT] [I] PLAYER_KI_3=>3
+
+
+//  ------------------------  Method Definitions:  ------------------------  
+
+#define [METHOD] addCannon=>1
+#define [METHOD] setPlayerCount=>2
+#define [METHOD] addVoidWall=>3
+#define [METHOD] addVoidPillar=>4
+#define [METHOD] addWall=>5
+#define [METHOD] addPillar=>6
+#define [METHOD] addMovingVoidWall=>7
+#define [METHOD] addMovingVoidPillar=>8
+#define [METHOD] addVortex=>9
+
+
+//  ------------------------  Methods:  ------------------------  
+
+setPlayerCount[I](2)
+
+addCannon[III](176, 512, PLAYER_HUMAN)
+
+addCannon[III](352, 128, PLAYER_NEUTRAL)
+addCannon[III](352, 384, PLAYER_NEUTRAL)
+addCannon[III](352, 640, PLAYER_NEUTRAL)
+addCannon[III](352, 896, PLAYER_NEUTRAL)
+
+addVoidWall[IIBI](352, 256, false, 192)
+addVoidWall[IIBI](352, 512, false, 192)
+addVoidWall[IIBI](352, 768, false, 192)
+addVoidWall[IIBI](248, 128, true, 144)
+addVoidWall[IIBI](176, 304, false, 352)
+addVoidWall[IIBI](176, 720, false, 352)
+addVoidWall[IIBI](248, 896, true, 144)
+
+
+addVoidWall[IIBI](1056, 256, false, 192)
+addVoidWall[IIBI](1056, 512, false, 192)
+addVoidWall[IIBI](1056, 768, false, 192)
+addVoidWall[IIBI](1160, 128, true, 144)
+addVoidWall[IIBI](1232, 304, false, 352)
+addVoidWall[IIBI](1232, 720, false, 352)
+addVoidWall[IIBI](1160, 896, true, 144)
+
+addCannon[III](1056, 128, PLAYER_NEUTRAL)
+addCannon[III](1056, 384, PLAYER_NEUTRAL)
+addCannon[III](1056, 640, PLAYER_NEUTRAL)
+addCannon[III](1056, 896, PLAYER_NEUTRAL)
+
+addCannon[III](1232, 512, PLAYER_KI_1)

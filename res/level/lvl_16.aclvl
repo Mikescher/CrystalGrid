@@ -1,0 +1,54 @@
+// absCanvas v1.64 generated LevelFile
+// Programm: Crystal Grid
+// Method-Definitions: 8
+// Constant-Definitions: 5
+// Methods: ?
+
+
+programm "Crystal Grid"
+
+
+//  ------------------------  Constant Definitions:  ------------------------  
+
+#define [CONSTANT] [I] PLAYER_NEUTRAL=>-1
+#define [CONSTANT] [I] PLAYER_HUMAN=>0
+#define [CONSTANT] [I] PLAYER_KI_1=>1
+#define [CONSTANT] [I] PLAYER_KI_2=>2
+#define [CONSTANT] [I] PLAYER_KI_3=>3
+
+
+//  ------------------------  Method Definitions:  ------------------------  
+
+#define [METHOD] addCannon=>1
+#define [METHOD] setPlayerCount=>2
+#define [METHOD] addVoidWall=>3
+#define [METHOD] addVoidPillar=>4
+#define [METHOD] addWall=>5
+#define [METHOD] addPillar=>6
+#define [METHOD] addMovingVoidWall=>7
+#define [METHOD] addMovingVoidPillar=>8
+#define [METHOD] addVortex=>9
+
+
+//  ------------------------  Methods:  ------------------------  
+
+setPlayerCount[I](4)
+
+addCannon[III](704,  512, PLAYER_NEUTRAL)
+
+addCannon[III](352,  128, PLAYER_NEUTRAL)
+addCannon[III](1056, 128, PLAYER_NEUTRAL)
+
+addCannon[III](352,  896, PLAYER_NEUTRAL)
+addCannon[III](1056, 896, PLAYER_NEUTRAL)
+
+addCannon[III](176,  256, PLAYER_NEUTRAL)
+addCannon[III](176,  768, PLAYER_NEUTRAL)
+
+addCannon[III](1232,  256, PLAYER_NEUTRAL)
+addCannon[III](1232,  768, PLAYER_NEUTRAL)
+
+addCannon[III](176,  128, PLAYER_HUMAN)
+addCannon[III](1232, 128, PLAYER_KI_1)
+addCannon[III](176,  896, PLAYER_KI_2)
+addCannon[III](1232, 896, PLAYER_KI_3)
